@@ -45,6 +45,32 @@ b3.onclick =()=>{
 
     
 }
-b3
+b4.onclick =()=>{
+    let vid=document.createElement("video");
+    let clossBt=document.createElement("button")
+
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    
+
+    fid.style.display="block";
+    vid.setAttribute("src","v1.mp4");
+    vid.autoplay = true
+    
+  
+    
+    fid.appendChild(clossBt);
+    fid.appendChild(vid);
+
+    
+    clossBt.addEventListener("click", ()=>{
+    fid.style.display="none";
+    clossBt.remove();
+    vid.remove();
+});
+
+    
+}
 
 
