@@ -24,21 +24,28 @@ button{
     height: 60vh;  
 }
 
-button:hover{
+.continar button:hover{
     transform: scale(1.5,1.5);
     transition: 2s;
 }
 
 .fid{
-    border:  2px solid;
+  margin-top: 1vh;
     width: 60vw;
-    height: 50vh;
+    height: 60vh;
+    background-size: contain;
     display: none;
     position: absolute;
     transform: translateX(30%);
-    background-color: aliceblue;
+    background-color: #FFFFFF;
+    ;
+}
+.fid img{
+    width: 60vw;
+    height: 60vh;
 }
 video{
     width: 60vw;
     height: 50vh;
 }
+

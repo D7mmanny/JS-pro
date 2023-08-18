@@ -14,4 +14,37 @@ let b13=document.querySelector("#B13");
 let b14=document.querySelector("#B14");
 let b15=document.querySelector("#B15");
 let b16=document.querySelector("#B16");
-let fid=document.querySelector(".fid");
+let fid=document.querySelector("#fid");
+
+
+
+
+b1.onclick =()=>window.close();
+b2.onclick =()=>window.open();
+b3.onclick =()=>{
+    let imgB3=document.createElement("img");
+    let clossBt=document.createElement("button")
+
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    clossBt.style.position="absolute";
+
+    fid.style.display="block";
+    imgB3.setAttribute("src","b3.jpg");
+    
+    fid.appendChild(clossBt);
+    fid.appendChild(imgB3);
+
+    
+    clossBt.addEventListener("click", ()=>{
+    fid.style.display="none";
+    clossBt.remove();
+    imgB3.remove();
+});
+
+    
+}
+b3
+
+
