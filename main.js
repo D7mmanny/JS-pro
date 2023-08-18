@@ -1,0 +1,17 @@
+let b1=document.querySelector("#B1");
+let b2=document.querySelector("#B2");
+let b3=document.querySelector("#B3");
+let b4=document.querySelector("#B4");
+let b5=document.querySelector("#B5");
+let b6=document.querySelector("#B6");
+let b7=document.querySelector("#B7");
+let b8=document.querySelector("#B8");
+let b9=document.querySelector("#B9");
+let b10=document.querySelector("#B10");
+let b11=document.querySelector("#B11");
+let b12=document.querySelector("#B12");
+let b13=document.querySelector("#B13");
+let b14=document.querySelector("#B14");
+let b15=document.querySelector("#B15");
+let b16=document.querySelector("#B16");
+let fid=document.querySelector(".fid");

@@ -1,0 +1,44 @@
+body{
+    /* cursor: none;  */
+    background-color: #F1F0E8   ;
+}
+.continar{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 10px black;
+}
+
+.carousel{
+    background-color:#FFFFFF ;
+}
+
+.carousel img{
+    height: 60vh;  
+}
+
+button:hover{
+    transform: scale(1.5,1.5);
+    transition: 2s;
+}
+
+.fid{
+    border:  2px solid;
+    width: 60vw;
+    height: 50vh;
+    display: none;
+    position: absolute;
+    transform: translateX(30%);
+    background-color: aliceblue;
+}
+video{
+    width: 60vw;
+    height: 50vh;
+}
