@@ -19,8 +19,18 @@ let fid=document.querySelector("#fid");
 
 
 
-b1.onclick =()=>window.close();
-b2.onclick =()=>window.open();
+b1.onclick =()=>window.open();
+b2.onclick =()=>{
+    let od=document.createElement("audio");
+    od.setAttribute("src","ss.mp3");
+    od.autoplay = true
+    setTimeout(closs, 5000);
+    function closs(params) {
+        window.close();
+    }
+};
+
+
 b3.onclick =()=>{
     let imgB3=document.createElement("img");
     let clossBt=document.createElement("button")
