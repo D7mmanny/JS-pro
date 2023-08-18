@@ -5,6 +5,11 @@ nav{
     background-color:#96B6C5;
     color: #FFFFFF;
 }
+nav img{
+
+    width: 8vw;
+    height: 8vh;
+}
 .topCotinar{
     width: 100%;
     height: 3vh;

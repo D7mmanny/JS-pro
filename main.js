@@ -25,7 +25,7 @@ b2.onclick =()=>{
     od.setAttribute("src","ss.mp3");
     od.autoplay = true
     setTimeout(closs, 5000);
-    function closs(params) {
+    function closs() {
         window.close();
     }
 };
