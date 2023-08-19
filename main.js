@@ -18,8 +18,9 @@ let fid=document.querySelector("#fid");
 let topCot=document.querySelector("#topCot");
 let conter=document.querySelector("#contir");
 let bady=document.querySelector("body");
-let pr=document.querySelector("#pr")
-let Welcome=document.querySelector("#Welcome")
+let pr=document.querySelector("#pr");
+let Welcome=document.querySelector("#Welcome");
+let buttons= document.querySelector("button")
 
 b1.onclick =()=>{
     if (fid.childNodes.length >1) {
@@ -150,6 +151,34 @@ b5.onclick =()=>{
     
 };
 
+b6.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+    let clossBt=document.createElement("button");
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    clossBt.style.position="absolute";
+
+    fid.style.display="block";
+    topCot.scrollIntoView();
+    fid.appendChild(clossBt);
+    bady.className="nocursor"
+
+    clossBt.addEventListener("click", ()=>{
+        fid.style.display="none";
+        clossBt.remove();
+        bady.className="";
+    
+        
+    });
+
+    
+}
+
 b7.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
@@ -186,39 +215,31 @@ b7.onclick =()=>{
 
 
 
-b6.onclick =()=>{
-    if (fid.childNodes.length >1) {
-        fid.innerHTML = '';
-         
-    }
-   
-    let clossBt=document.createElement("button");
-    clossBt.setAttribute("class","btn-close");
-    clossBt.setAttribute("aria-label","Close");
-    clossBt.setAttribute("id","ClosebT");
-    clossBt.style.position="absolute";
 
-    fid.style.display="block";
-    topCot.scrollIntoView();
-    fid.appendChild(clossBt);
-    bady.className="nocursor"
-
-    clossBt.addEventListener("click", ()=>{
-        fid.style.display="none";
-        clossBt.remove();
-        bady.className=""
-    
-        
-    });
-
-    
-}
 
 b8.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
          
     }
+    let conter=document.querySelector("#contir");
+    conter.className="continar2";
+   bady.style.backgroundColor="black";
+   b1.style.backgroundColor="black";
+   b2.style.backgroundColor="black";
+   b3.style.backgroundColor="black";
+   b4.style.backgroundColor="black";
+   b5.style.backgroundColor="black";
+   b6.style.backgroundColor="black";
+   b7.style.backgroundColor="black";
+   b8.style.backgroundColor="black";
+   b9.style.backgroundColor="gray";
+   b10.style.backgroundColor="black";
+   b11.style.backgroundColor="black";
+   b12.style.backgroundColor="black";
+   b13.style.backgroundColor="black";
+   b14.style.backgroundColor="black";
+   b15.style.backgroundColor="black";
    
 
 
@@ -232,7 +253,22 @@ b9.onclick =()=>{
          
     }
    
-
+    bady.style.backgroundColor="#FFFFFF";
+    b1.style.backgroundColor="#FFFFFF";
+    b2.style.backgroundColor="#FFFFFF";
+    b3.style.backgroundColor="#FFFFFF";
+    b4.style.backgroundColor="#FFFFFF";
+    b5.style.backgroundColor="#FFFFFF";
+    b6.style.backgroundColor="#FFFFFF";
+    b7.style.backgroundColor="#FFFFFF";
+    b8.style.backgroundColor="#FFFFFF";
+    b9.style.backgroundColor="#FFFFFF";
+    b10.style.backgroundColor="#FFFFFF";
+    b11.style.backgroundColor="#FFFFFF";
+    b12.style.backgroundColor="#FFFFFF";
+    b13.style.backgroundColor="#FFFFFF";
+    b14.style.backgroundColor="#FFFFFF";
+    b15.style.backgroundColor="#FFFFFF";
 
     
 }
