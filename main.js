@@ -17,29 +17,10 @@ let b16=document.querySelector("#B16");
 let fid=document.querySelector("#fid");
 let topCot=document.querySelector("#topCot");
 let conter=document.querySelector("#contir");
-
-
+let bady=document.querySelector("body");
+let pr=document.querySelector("#pr")
 
 b1.onclick =()=>{
-    window.open();
-    window.open();
-    window.open();
-    window.open();
-    window.open();
-    window.open();
-};
-b2.onclick =()=>{
-    let od=document.createElement("audio");
-    od.setAttribute("src","ss.mp3");
-    od.autoplay = true
-    setTimeout(closs, 5000);
-    function closs() {
-        window.close();
-    }
-};
-
-
-b3.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
          
@@ -71,7 +52,7 @@ b3.onclick =()=>{
 
     
 }
-b4.onclick =()=>{
+b2.onclick =()=>{
 
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
@@ -106,6 +87,54 @@ b4.onclick =()=>{
     
 }
 
+
+b3.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+    let vid=document.createElement("video");
+    let clossBt=document.createElement("button")
+
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    
+
+    fid.style.display="block";
+    topCot.scrollIntoView();
+    vid.setAttribute("src","v2.mp4");
+    vid.setAttribute("id","v1");
+    vid.autoplay = true
+    
+  
+    
+    fid.appendChild(clossBt);
+    fid.appendChild(vid);
+
+    
+    clossBt.addEventListener("click", ()=>{
+    fid.style.display="none";
+    clossBt.remove();
+    vid.remove();
+});
+   
+
+
+    
+}
+b4.onclick =()=>{
+    window.open("/pag2.html");
+    window.open("/pag2.html");
+    window.open("/pag2.html");
+    window.open("/pag2.html");
+    window.open("/pag2.html");
+    window.open("/pag2.html");
+
+};
+
+
+
 b5.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
@@ -116,7 +145,7 @@ b5.onclick =()=>{
     
 };
 
-b6.onclick =()=>{
+b7.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
          
@@ -152,13 +181,30 @@ b6.onclick =()=>{
 
 
 
-b7.onclick =()=>{
+b6.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
          
     }
    
+    let clossBt=document.createElement("button");
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    clossBt.style.position="absolute";
 
+    fid.style.display="block";
+    topCot.scrollIntoView();
+    fid.appendChild(clossBt);
+    bady.className="nocursor"
+
+    clossBt.addEventListener("click", ()=>{
+        fid.style.display="none";
+        clossBt.remove();
+        bady.className=""
+    
+        
+    });
 
     
 }
@@ -278,13 +324,13 @@ b15.onclick =()=>{
     
 }
 
+
 b16.onclick =()=>{
-    if (fid.childNodes.length >1) {
-        fid.innerHTML = '';
-         
+    let od=document.createElement("audio");
+    od.setAttribute("src","ss.mp3");
+    od.autoplay = true
+    setTimeout(closs, 5000);
+    function closs() {
+        window.close();
     }
-   
-
-
-    
-}
+};
