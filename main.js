@@ -23,7 +23,7 @@ let Welcome=document.querySelector("#Welcome");
 let buttons= document.querySelector("button");
 let nav=document.querySelector("nav");
 let card=document.querySelector("#carouselExampleIndicators");
-text = document.createTextNode("This just got added");
+text = document.createTextNode("You laughed right, please don't touch the buttons.");
 
 // buttons 
 
@@ -88,7 +88,7 @@ b2.onclick =()=>{
     fid.appendChild(clossBt);
     fid.appendChild(vid);
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("suuuuuuuuuuuuuuuuuuu");
     pr.appendChild(text)
     
     clossBt.addEventListener("click", ()=>{
@@ -126,7 +126,7 @@ b3.onclick =()=>{
     fid.appendChild(vid);
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("That's enough");
     pr.appendChild(text)
 
     clossBt.addEventListener("click", ()=>{
@@ -142,7 +142,7 @@ b3.onclick =()=>{
 b4.onclick =()=>{
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("Ha ha ha, I told you. ");
     pr.appendChild(text)
     window.open("/pag2.html");
     window.open("/pag2.html");
@@ -165,7 +165,7 @@ b5.onclick =()=>{
     conter.className="continar2";
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("No, you deleted the background image");
     pr.appendChild(text)
     
 };
@@ -188,7 +188,7 @@ b6.onclick =()=>{
     bady.className="nocursor"
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode(" I hid the mouse cursor ,Hahaha you are the one who started ");
     pr.appendChild(text)
 
     clossBt.addEventListener("click", ()=>{
@@ -224,7 +224,7 @@ b7.onclick =()=>{
     fid.appendChild(imgB3);
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("Well, let's become friends, so don't touch the buttons.  ");
     pr.appendChild(text)
 
     clossBt.addEventListener("click", ()=>{
@@ -269,7 +269,7 @@ b8.onclick =()=>{
    b15.style.backgroundColor="black";
    text.remove();
    Welcome.style.display="none";
-   text = document.createTextNode("This just got added");
+   text = document.createTextNode("Who turned off the lights? ");
    pr.appendChild(text)
    
 
@@ -302,7 +302,7 @@ b9.onclick =()=>{
     b15.style.backgroundColor="#FFFFFF";
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("Thank you for returning the light, so please don't touch the buttons.");
     pr.appendChild(text)
 
     
@@ -318,7 +318,7 @@ b10.onclick =()=>{
     card.remove();
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("What did you do! you deleted the carousel ");
     pr.appendChild(text)
    
 
@@ -348,7 +348,7 @@ b11.onclick =()=>{
     fid.appendChild(imgB3);
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("well it's funny right please leave the website");
     pr.appendChild(text)
 
 
@@ -374,7 +374,7 @@ b12.onclick =()=>{
     nav.remove();
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("What are you doing  you deleted a navbar .you are destroying my website ");
     pr.appendChild(text)
 
     
@@ -389,7 +389,7 @@ b13.onclick =()=>{
     topCot.scrollIntoView();
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("Hhhh it is a empty");
     pr.appendChild(text)
 
     
@@ -403,7 +403,7 @@ b14.onclick =()=>{
     topCot.scrollIntoView();
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("It's also empty.");
     pr.appendChild(text)
 
     
@@ -418,8 +418,24 @@ b15.onclick =()=>{
     topCot.scrollIntoView();
     text.remove();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode("You destroyed everything. That's okay, but don't touch the red button");
     pr.appendChild(text)
+
+    b1.remove();
+    b2.remove();
+    b3.remove();
+    b4.remove();
+    b5.remove();
+    b6.remove();
+    b7.remove();
+    b8.remove();
+    b9.remove();
+    b10.remove();
+    b11.remove();
+    b12.remove();
+    b13.remove();
+    b14.remove();
+    b15.remove();
 
 
     
@@ -430,8 +446,9 @@ b16.onclick =()=>{
     let od=document.createElement("audio");
     od.setAttribute("src","ss.mp3");
     text.remove();
+    topCot.scrollIntoView();
     Welcome.style.display="none";
-    text = document.createTextNode("This just got added");
+    text = document.createTextNode(".........................");
     pr.appendChild(text)
     od.autoplay = true
     setTimeout(closs, 5000);
