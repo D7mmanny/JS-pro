@@ -15,11 +15,19 @@ let b14=document.querySelector("#B14");
 let b15=document.querySelector("#B15");
 let b16=document.querySelector("#B16");
 let fid=document.querySelector("#fid");
-let topCot=document.querySelector("#topCot")
+let topCot=document.querySelector("#topCot");
+let conter=document.querySelector("#contir");
 
 
 
-b1.onclick =()=>window.open();
+b1.onclick =()=>{
+    window.open();
+    window.open();
+    window.open();
+    window.open();
+    window.open();
+    window.open();
+};
 b2.onclick =()=>{
     let od=document.createElement("audio");
     od.setAttribute("src","ss.mp3");
@@ -33,10 +41,7 @@ b2.onclick =()=>{
 
 b3.onclick =()=>{
     if (fid.childNodes.length >1) {
-        let closs=document.querySelector("#ClosebT");
-        let imgB=document.querySelector("#imgB");
-        closs.remove();
-        imgB.remove();
+        fid.innerHTML = '';
          
     }
    
@@ -67,6 +72,11 @@ b3.onclick =()=>{
     
 }
 b4.onclick =()=>{
+
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
     let vid=document.createElement("video");
     let clossBt=document.createElement("button")
 
@@ -76,7 +86,9 @@ b4.onclick =()=>{
     
 
     fid.style.display="block";
+    topCot.scrollIntoView();
     vid.setAttribute("src","v1.mp4");
+    vid.setAttribute("id","v1");
     vid.autoplay = true
     
   
@@ -94,4 +106,185 @@ b4.onclick =()=>{
     
 }
 
+b5.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+    let conter=document.querySelector("#contir");
+    conter.className="continar2";
+    
+};
 
+b6.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+    let imgB3=document.createElement("img");
+    let clossBt=document.createElement("button");
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    clossBt.style.position="absolute";
+
+    fid.style.display="block";
+    topCot.scrollIntoView();
+    imgB3.setAttribute("src","m2.jpeg");
+    imgB3.setAttribute("id","imgB");
+    
+    fid.appendChild(clossBt);
+    fid.appendChild(imgB3);
+
+
+    clossBt.addEventListener("click", ()=>{
+    fid.style.display="none";
+    clossBt.remove();
+    imgB3.remove();
+
+    
+});
+
+    
+}
+
+
+
+
+b7.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+b8.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+
+b9.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+
+b10.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+b11.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+    let imgB3=document.createElement("img");
+    let clossBt=document.createElement("button");
+    clossBt.setAttribute("class","btn-close");
+    clossBt.setAttribute("aria-label","Close");
+    clossBt.setAttribute("id","ClosebT");
+    clossBt.style.position="absolute";
+
+    fid.style.display="block";
+    topCot.scrollIntoView();
+    imgB3.setAttribute("src","m3.jpg");
+    imgB3.setAttribute("id","imgB");
+    
+    fid.appendChild(clossBt);
+    fid.appendChild(imgB3);
+
+
+    clossBt.addEventListener("click", ()=>{
+    fid.style.display="none";
+    clossBt.remove();
+    imgB3.remove();
+
+    
+});
+
+    
+}
+
+
+b12.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+
+b13.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+b14.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+
+b15.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
+
+b16.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        fid.innerHTML = '';
+         
+    }
+   
+
+
+    
+}
