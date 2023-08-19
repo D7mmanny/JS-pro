@@ -20,7 +20,12 @@ let conter=document.querySelector("#contir");
 let bady=document.querySelector("body");
 let pr=document.querySelector("#pr");
 let Welcome=document.querySelector("#Welcome");
-let buttons= document.querySelector("button")
+let buttons= document.querySelector("button");
+let nav=document.querySelector("nav");
+let card=document.querySelector("#carouselExampleIndicators");
+text = document.createTextNode("This just got added");
+
+// buttons 
 
 b1.onclick =()=>{
     if (fid.childNodes.length >1) {
@@ -41,9 +46,9 @@ b1.onclick =()=>{
     imgB3.setAttribute("id","imgB");
     fid.appendChild(clossBt);
     fid.appendChild(imgB3);
-    Welcome.style.display="none";
 
-    text = document.createTextNode("This just got added");
+    Welcome.style.display="none";
+    
     pr.appendChild(text)
 
 
@@ -79,10 +84,12 @@ b2.onclick =()=>{
     vid.autoplay = true
     
   
-    
+    text.remove();
     fid.appendChild(clossBt);
     fid.appendChild(vid);
-
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
     
     clossBt.addEventListener("click", ()=>{
     fid.style.display="none";
@@ -117,8 +124,11 @@ b3.onclick =()=>{
     
     fid.appendChild(clossBt);
     fid.appendChild(vid);
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
-    
     clossBt.addEventListener("click", ()=>{
     fid.style.display="none";
     clossBt.remove();
@@ -130,6 +140,10 @@ b3.onclick =()=>{
     
 }
 b4.onclick =()=>{
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
     window.open("/pag2.html");
     window.open("/pag2.html");
     window.open("/pag2.html");
@@ -146,8 +160,13 @@ b5.onclick =()=>{
         fid.innerHTML = '';
          
     }
+    topCot.scrollIntoView();
     let conter=document.querySelector("#contir");
     conter.className="continar2";
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
     
 };
 
@@ -156,7 +175,7 @@ b6.onclick =()=>{
         fid.innerHTML = '';
          
     }
-   
+    topCot.scrollIntoView();
     let clossBt=document.createElement("button");
     clossBt.setAttribute("class","btn-close");
     clossBt.setAttribute("aria-label","Close");
@@ -167,6 +186,10 @@ b6.onclick =()=>{
     topCot.scrollIntoView();
     fid.appendChild(clossBt);
     bady.className="nocursor"
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     clossBt.addEventListener("click", ()=>{
         fid.style.display="none";
@@ -199,7 +222,10 @@ b7.onclick =()=>{
     
     fid.appendChild(clossBt);
     fid.appendChild(imgB3);
-
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     clossBt.addEventListener("click", ()=>{
     fid.style.display="none";
@@ -222,6 +248,7 @@ b8.onclick =()=>{
         fid.innerHTML = '';
          
     }
+    topCot.scrollIntoView();
     let conter=document.querySelector("#contir");
     conter.className="continar2";
    bady.style.backgroundColor="black";
@@ -240,6 +267,10 @@ b8.onclick =()=>{
    b13.style.backgroundColor="black";
    b14.style.backgroundColor="black";
    b15.style.backgroundColor="black";
+   text.remove();
+   Welcome.style.display="none";
+   text = document.createTextNode("This just got added");
+   pr.appendChild(text)
    
 
 
@@ -252,7 +283,7 @@ b9.onclick =()=>{
         fid.innerHTML = '';
          
     }
-   
+    topCot.scrollIntoView();
     bady.style.backgroundColor="#FFFFFF";
     b1.style.backgroundColor="#FFFFFF";
     b2.style.backgroundColor="#FFFFFF";
@@ -269,6 +300,10 @@ b9.onclick =()=>{
     b13.style.backgroundColor="#FFFFFF";
     b14.style.backgroundColor="#FFFFFF";
     b15.style.backgroundColor="#FFFFFF";
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     
 }
@@ -279,6 +314,12 @@ b10.onclick =()=>{
         fid.innerHTML = '';
          
     }
+    nav.scrollIntoView();
+    card.remove();
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
    
 
 
@@ -305,6 +346,10 @@ b11.onclick =()=>{
     
     fid.appendChild(clossBt);
     fid.appendChild(imgB3);
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
 
     clossBt.addEventListener("click", ()=>{
@@ -325,7 +370,12 @@ b12.onclick =()=>{
          
     }
    
-
+    nav.scrollIntoView();
+    nav.remove();
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     
 }
@@ -336,8 +386,11 @@ b13.onclick =()=>{
         fid.innerHTML = '';
          
     }
-   
-
+    topCot.scrollIntoView();
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     
 }
@@ -347,8 +400,11 @@ b14.onclick =()=>{
         fid.innerHTML = '';
          
     }
-   
-
+    topCot.scrollIntoView();
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
     
 }
@@ -359,7 +415,11 @@ b15.onclick =()=>{
         fid.innerHTML = '';
          
     }
-   
+    topCot.scrollIntoView();
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
 
     
@@ -369,6 +429,10 @@ b15.onclick =()=>{
 b16.onclick =()=>{
     let od=document.createElement("audio");
     od.setAttribute("src","ss.mp3");
+    text.remove();
+    Welcome.style.display="none";
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
     od.autoplay = true
     setTimeout(closs, 5000);
     function closs() {
