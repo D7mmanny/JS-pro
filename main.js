@@ -19,13 +19,14 @@ let topCot=document.querySelector("#topCot");
 let conter=document.querySelector("#contir");
 let bady=document.querySelector("body");
 let pr=document.querySelector("#pr")
+let Welcome=document.querySelector("#Welcome")
 
 b1.onclick =()=>{
     if (fid.childNodes.length >1) {
         fid.innerHTML = '';
-         
+    
     }
-   
+
     let imgB3=document.createElement("img");
     let clossBt=document.createElement("button");
     clossBt.setAttribute("class","btn-close");
@@ -37,16 +38,20 @@ b1.onclick =()=>{
     topCot.scrollIntoView();
     imgB3.setAttribute("src","b3.jpg");
     imgB3.setAttribute("id","imgB");
-    
     fid.appendChild(clossBt);
     fid.appendChild(imgB3);
+    Welcome.style.display="none";
+
+    text = document.createTextNode("This just got added");
+    pr.appendChild(text)
 
 
     clossBt.addEventListener("click", ()=>{
     fid.style.display="none";
     clossBt.remove();
     imgB3.remove();
-
+    text.remove();
+    Welcome.style.display="block";
     
 });
 
