@@ -15,7 +15,7 @@ let b14=document.querySelector("#B14");
 let b15=document.querySelector("#B15");
 let b16=document.querySelector("#B16");
 let fid=document.querySelector("#fid");
-
+let topCot=document.querySelector("#topCot")
 
 
 
@@ -32,25 +32,36 @@ b2.onclick =()=>{
 
 
 b3.onclick =()=>{
+    if (fid.childNodes.length >1) {
+        let closs=document.querySelector("#ClosebT");
+        let imgB=document.querySelector("#imgB");
+        closs.remove();
+        imgB.remove();
+         
+    }
+   
     let imgB3=document.createElement("img");
-    let clossBt=document.createElement("button")
-
+    let clossBt=document.createElement("button");
     clossBt.setAttribute("class","btn-close");
     clossBt.setAttribute("aria-label","Close");
     clossBt.setAttribute("id","ClosebT");
     clossBt.style.position="absolute";
 
     fid.style.display="block";
+    topCot.scrollIntoView();
     imgB3.setAttribute("src","b3.jpg");
+    imgB3.setAttribute("id","imgB");
     
     fid.appendChild(clossBt);
     fid.appendChild(imgB3);
 
-    
+
     clossBt.addEventListener("click", ()=>{
     fid.style.display="none";
     clossBt.remove();
     imgB3.remove();
+
+    
 });
 
     

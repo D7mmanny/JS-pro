@@ -11,10 +11,13 @@ nav img{
     height: 8vh;
 }
 .topCotinar{
+    
+    top: 2vh;
+    z-index: 1;
     width: 100%;
-    height: 3vh;
+    height: 20vh;
     background-color:#EEE0C9 ;
-
+  
 }
 .continar{
     height: 100vh;
@@ -62,7 +65,7 @@ button{
     height: 60vh;
     background-size: contain;
     display: none;
-    
+    z-index: 1;
     transform: translateX(30%);
     background-color: #FFFFFF;
     inset: 0;
